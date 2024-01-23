@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Palindroms & Fibonacci</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <main class="main">
+    <div class="main__container container">
+      <div class="main__inner">
+        <div class="main__info">
+          <h1 class="title">Palindrom and def. of Fibonacci</h1>
+        </div>
+        <div class="main__task">
+          <div class="main__task--choose">
+            <div class="main__task--choose-input">
+              <input checked type="radio" id="palindrom" name="userChoose" value="Palindrom" />
+              <label for="palindrom">Palindrom</label>
+            </div>
+            <div class="main__task--choose-input">
+              <input type="radio" id="fibonacci" name="userChoose" value="Fibonacci" />
+              <label for="fibonacci">Def. of Fibonacci</label>  
+            </div>
+          </div>
+          <div class="main__task--area">
+            <div class="main__area--enter">
+              <label for="userValue">Enter value:</label>
+              <input id='userValue' type="text">
+              <button onclick='mainFunction()' id='resultSubmitBtn' type="button">Submit</button>
+            </div>
+            <textarea readonly id="textArea" cols="80" rows="25"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- /.main -->
+
+  <footer class="footer">
+    Made by Alexander Kuznecov 2024 &copy;
+  </footer>
+  <!-- /.footer -->
+
+  <!-- script -->
+  <script src="scripts/script.js"></script>
+</body>
+</html>
